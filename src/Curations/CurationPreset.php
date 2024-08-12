@@ -15,4 +15,6 @@ abstract class CurationPreset
     abstract public function getFormat(): string;
 
     abstract public function getQuality(): int;
+
+    abstract public function getAspectRatio(): ?float;
 }

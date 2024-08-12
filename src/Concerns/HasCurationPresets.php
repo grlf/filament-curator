@@ -16,6 +16,7 @@ trait HasCurationPresets
                 'height' => $preset->getHeight(),
                 'format' => $preset->getFormat(),
                 'quality' => $preset->getQuality(),
+                'aspectRatio' => $preset->getAspectRatio(),
             ];
         })->toArray();
     }

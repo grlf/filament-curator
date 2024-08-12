@@ -57,6 +57,11 @@ export default function curation({statePath, fileName, fileType, presets = {}}) 
                     this.key = preset.key;
                     this.format = preset.format;
                     this.quality = preset.quality;
+
+                    if (typeof preset.aspectRatio === 'number')
+                    {
+                        this.cropper.setAspectRatio(preset.aspectRatio);
+                    }
                 }
             })
         },

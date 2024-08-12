@@ -33,4 +33,9 @@ class ThumbnailPreset extends CurationPreset
     {
         return 60;
     }
+
+    public function getAspectRatio(): ?float
+    {
+        return 1;
+    }
 }
